@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<title>Tic Tac Toe</title>
+		<link rel="stylesheet" href="tictactoe.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	</head>
+
+<body>	
+		<!-- Button trigger modal -->
+		<!--
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#playOptionsModal">
+		  Launch demo modal
+		</button>-->
+
+		<!-- Modal -->
+		<div class="modal fade" id="playOptionsModal" tabindex="-1" role="dialog" aria-labelledby="playOptionsModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="playOptionsModalLabel">Choose Number of Players</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <h1>How do you want to play?</h1>
+				<!--<div id="onePlayer" class="btn btn-default btn_players">One Player</div>
+				<div id="twoPlayer" class="btn btn-default btn_players">Two Player</div>-->
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" id="onePlayer" class="btn btn-primary btn_players" data-dismiss="modal">One Player</button>
+		        <button type="button" id="twoPlayer" class="btn btn-primary btn_players" data-dismiss="modal">Two Players</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<div class="modal fade" id="teamOptionsModal" tabindex="0" role="dialog" aria-labelledby="teamOptionsModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="teamOptionsModalLabel">Choose Team</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <h1>Would you like to be X or O?</h1>
+				<!--<div class="btn btn-default btn_team">X</div>' + <div class="btn btn-default btn_team">O</div>'+ <div id="back" class="btn btn-default">Back</div>-->
+		      </div>
+		      <div class="modal-footer">
+		      	<div id="back" class="btn btn-default" data-dismiss="modal">Back</div>
+		        <button type="button" class="btn btn-primary btn_team" data-dismiss="modal">X</button>
+		        <button type="button" class="btn btn-primary btn_team" data-dismiss="modal">O</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<div class="container">
+			<div class="menu">
+				<button class="btn btn-success btn_team" id="btn_teamX"">X</button>
+				<button class="btn btn-success btn_team" id="btn_teamO">O</button>
+				<div id="playModeLbl"></div>
+				<div id="team_display">Team: None</div>
+				<button class="btn btn-success"  id="btn_compTurn">Change Turn</button>
+				<button class="btn btn-success" id="btn_compPlay">Computer Play</button>
+				<div id="turn_display">Turn: None</div>
+				<div id="end_display"></div>
+				<div id="gamesWonLbl">Games Won: </div>
+				<div id="p1GamesWonLbl">Player 1 Games Won: </div>
+				<div id="p2GamesWonLbl">Player 2 Games Won: </div>
+				<div id="gamesLostLbl">Games Lost: </div>
+				<div id="gamesTiedLbl">Games Tied: </div>
+				<button class="btn btn-success" id="btn_reset">Reset</button>
+			</div>
+			<div class="row">
+				<div id="gameFrame" class="col-xs-12"></div>
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="tictactoe3.js"></script>
+	</body>
+</html>

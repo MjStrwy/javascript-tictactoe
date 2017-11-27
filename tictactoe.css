@@ -1,0 +1,49 @@
+#gameFrame {
+	width: 500px;
+	height: 500px;
+	border: 2px solid black;
+	margin: 0 auto;
+	background: darkgreen;
+}
+
+.gameSquare{
+	/*border: 2px solid white;*/
+	line-height: 10em;
+	height: 10em;
+	text-align: center;
+	font-size: 18px;
+}
+
+.vertical {
+	border-left: 2px solid white;
+	border-right: 2px solid white;
+}
+
+.horizontal {
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+}
+
+.highlighted {
+	color: yellow;
+}
+
+.taken {
+	background: gray;
+}
+
+#introOptions{
+	margin: 0 auto;
+	padding: 50% 20px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	border: 2px solid orange;
+}
+
+.menu {
+	margin: 0 auto;
+	width: 50%;
+	text-align: center;
+	border: 2px solid orange;
+}
